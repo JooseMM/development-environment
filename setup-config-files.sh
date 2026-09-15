@@ -48,7 +48,7 @@ fi
 
 # Highlight command syntax (with fallback check)
 if [ -f /usr/share/zsh/plugins/zsh-syntax-highlighting.zsh ]; then
-    source /usr/share/zsh/plugins/zsh-syntax-highlighting.zsh
+    source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 fi
 EOF
 
