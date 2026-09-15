@@ -41,7 +41,7 @@ docker run -it `
 
 ```bash
 docker run -it \
-  -v /path/to/your/nutripia:/workspace \
+  -v /path/to/project/folder:/workspace \
   -v nvim-data:/root/.cache \
   -v nvim-local:/root/.local \
   dev
