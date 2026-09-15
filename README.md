@@ -2,8 +2,6 @@
 
 A customized, feature-rich Arch Linux Docker environment tailored for modern development and terminal workflows. It comes pre-configured with Neovim, Zsh, Starship prompt, Tmux, and essential CLI tools.
 
----
-
 ## 🛠️ Included Tools & Stack
 
 * **Operating System:** Arch Linux (`latest`)
@@ -15,8 +13,6 @@ A customized, feature-rich Arch Linux Docker environment tailored for modern dev
   * `eza` (better `ls`)
   * `bat` (better `cat`)
   * `ripgrep` (fast search)
-
----
 
 ## 🚀 Getting Started
 
@@ -51,15 +47,11 @@ docker run -it \
   dev
 ```
 
----
-
 ## 📁 Volume Persistence Strategy
 
 * **`/workspace`**: Mounted to your local project repository so you can edit files directly from your host machine.
 * **`nvim-data` (`/root/.cache`)**: A named Docker volume that preserves Neovim cache, plugin downloads (e.g., via `lazy.nvim`), and LSP binaries so they don't need to be re-downloaded every time the container is recreated.
 * **`nvim-local` (`/root/.local`)**: Preserves local state data and extensions.
-
----
 
 ## ⚙️ Customization
 
