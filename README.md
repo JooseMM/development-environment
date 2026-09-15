@@ -1,4 +1,3 @@
-```markdown
 # Arch Linux Development Container
 
 A customized, feature-rich Arch Linux Docker environment tailored for modern development and terminal workflows. It comes pre-configured with Neovim, Zsh, Starship prompt, Tmux, and essential CLI tools.
@@ -26,7 +25,6 @@ Build the container image from the directory containing your `Dockerfile` and `s
 
 ```bash
 docker build -t dev .
-
 ```
 
 ### 2. Run the Container
@@ -41,7 +39,6 @@ docker run -it `
   -v nvim-data:/root/.cache `
   -v nvim-local:/root/.local `
   dev
-
 ```
 
 #### **Bash / Linux / macOS**
@@ -52,7 +49,6 @@ docker run -it \
   -v nvim-data:/root/.cache \
   -v nvim-local:/root/.local \
   dev
-
 ```
 
 ---
@@ -68,7 +64,3 @@ docker run -it \
 ## ⚙️ Customization
 
 Configurations for Neovim, Starship, and Tmux are automatically cloned during the build process from [JooseMM's GitHub repositories](https://www.google.com/search?q=https://github.com/JooseMM). You can modify `setup-config-files.sh` to point to your own dotfiles repository if needed.
-
-```
-
-```
